@@ -1,0 +1,113 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  /* fallback gradient if no map is loaded */
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  color: #0077b6;
+  user-select: none;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px #0077b6;
+}
+
+.search button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.search button:hover:not(:disabled) {
+  background-color: #005f8f;
+}
+
+.weather h2 {
+  margin: 10px 0;
+  color: #004e7c;
+}
+
+.weather img {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0077b6;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .search {
+    flex-direction: row;
+  }
+
+  .search input {
+    flex: 1;
+  }
+
+  .search button {
+    width: 120px;
+  }
+}
