@@ -1,6 +1,7 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  base: '/weather-app/',   // <== This tells Vite to prefix asset URLs with /weather-app/
-  plugins: [react()],
-});
-
-
+  base: '/weather-app/',
+  plugins: [react()]
+})
