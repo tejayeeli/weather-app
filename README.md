@@ -25,5 +25,5 @@ A responsive weather application built with **React.js** and styled using **cust
 ---
 
 ## 📸 Preview
-
+![Weather App Screenshot](./Preview.png)
 
